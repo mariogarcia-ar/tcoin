@@ -4,6 +4,12 @@ Tokenization of consumer loans
 
 This app was initialized with [create-near-app]
 
+Tutorial
+========
+
+
+[![TCOin :: NCD I](https://img.youtube.com/vi/j6nOWwr11RY/0.jpg)](https://www.youtube.com/watch?v=j6nOWwr11RY "TCOin :: NCD I")
+
 Quick Start
 ===========
 
