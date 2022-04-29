@@ -71,7 +71,7 @@ document.querySelector('#claim_reward').onclick = async (event) => {
   // console.log('click en reward')
   try {
     // make an update call to the smart contract
-    await window.contract.pay({})
+    await window.contract.clain_reward({})
   } catch (e) {
     alert(
       'Something went wrong! ' +
@@ -85,7 +85,7 @@ document.querySelector('#claim_reward').onclick = async (event) => {
   }  
 
   const method = document.querySelector('[data-behavior=notification] span')
-  method.innerText = 'pay'
+  method.innerText = 'clain_reward'
 
   // show notification
   document.querySelector('[data-behavior=notification]').style.display = 'block'

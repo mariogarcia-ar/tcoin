@@ -5,7 +5,7 @@ beforeAll(async function () {
   // console.log(window.accountId)
   window.contract = await near.loadContract(nearConfig.contractName, {
     viewMethods: ['get_message'],
-    changeMethods: ['pay'],
+    changeMethods: ['clain_reward'],
     sender: window.accountId
   })
 })
@@ -15,7 +15,7 @@ test('get_message', async () => {
   expect(message).toEqual('Hello')
 })
 
-test('pay', async () => {
-  const pay = await window.contract.pay();
-  expect(pay).toEqual('') 
+test('clain_reward', async () => {
+  const clain_reward = await window.contract.clain_reward();
+  expect(clain_reward).toEqual('') 
 })

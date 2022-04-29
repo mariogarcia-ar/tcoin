@@ -47,7 +47,7 @@ impl TCOin {
     }
 
     #[payable]
-    pub fn pay(&mut self) -> Promise {
+    pub fn clain_reward(&mut self) -> Promise {
         let amount: u128 = 5_500_000_000_000_000_000_000_000; // 1 $NEAR as yoctoNEAR
         Promise::new(env::predecessor_account_id()).transfer(amount)
     }
@@ -117,7 +117,7 @@ mod tests {
 
     // https://crates.io/crates/near-sdk-sim
     // #[test]
-    // fn set_pay() {
+    // fn set_clain_reward() {
     //     let context = get_context(vec![], true);
     //     testing_env!(context);
     //     let contract = TCOin::default();
